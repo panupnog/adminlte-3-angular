@@ -33,25 +33,74 @@ export class MenuSidebarComponent implements OnInit {
 
 export const MENU = [
     {
-        name: 'Dashboard',
-        path: ['/']
+        name: 'หน้าหลัก',
+        path: ['/dashboard']
     },
     {
-        name: 'Blank',
-        path: ['/blank']
+        name: 'รายการสินค้า',
+        path: ['/product-list']
     },
     {
-        name: 'Main Menu',
+        name: 'จัดการข้อมูลอุปกรณ์',
         children: [
             {
-                name: 'Sub Menu',
-                path: ['/sub-menu-1']
+                name: 'จัดการข้อมูลกล้องวงจรปิด',
+                path: ['managecctv']
             },
 
             {
-                name: 'Blank',
-                path: ['/sub-menu-2']
+                name: 'จัดการคลังสินค้า',
+                path: ['manage-warehouse']
             }
+
         ]
-    }
+    },
+    {
+        name: 'แจ้งซ่อม',
+        children: [
+            {
+                name: 'จัดการประเภทปัญหา',
+                path: ['deal-problems']
+            }
+            ,
+
+            {
+                name: 'ส่งต่อข้อมูลให้ช่าง',
+                path: ['assign-technician']
+            }
+
+        ]
+    }, {
+        name: 'รายการแจ้งซ่อม',
+        path: ['/list-reheasals']
+    },
+    {
+        name: 'จัดการข้อมูลผู้ใช้งาน',
+        path: ['user-manage']
+    },
+    {
+        name: 'จัดการข้อมูลช่าง',
+        path: ['technician-manage']
+    },
+    {
+        name: 'รายงาน',
+        path: ['report']
+    },
+    
+    // {
+    //     name: 'Main Menu',
+    //     children: [
+    //         {
+    //             name: 'Sub Menu',
+    //             path: ['/sub-menu-1']
+    //         },
+
+    //         {
+    //             name: 'Blank',
+    //             path: ['/sub-menu-2']
+    //         }
+
+    //     ]
+    // }
+    
 ];

@@ -13,6 +13,15 @@ import {RecoverPasswordComponent} from '@modules/recover-password/recover-passwo
 import {PrivacyPolicyComponent} from '@modules/privacy-policy/privacy-policy.component';
 import {MainMenuComponent} from '@pages/main-menu/main-menu.component';
 import {SubMenuComponent} from '@pages/main-menu/sub-menu/sub-menu.component';
+import { ProductListComponent } from '@pages/product-list/product-list.component';
+import { ManagecctvComponent } from '@pages/managecctv/managecctv.component';
+import { ListReheasalsComponent } from '@pages/list-reheasals/list-reheasals.component';
+import { ManageWarehouseComponent } from '@pages/manage-warehouse/manage-warehouse.component';
+import { DealProblemsComponent } from '@pages/deal-problems/deal-problems.component';
+import { AssignTechnicianComponent } from '@pages/assign-technician/assign-technician.component';
+import { UserManageComponent } from '@pages/user-manage/user-manage.component';
+import { TechnicianManageComponent } from '@pages/technician-manage/technician-manage.component';
+import { ReportComponent } from '@pages/report/report.component';
 
 const routes: Routes = [
     {
@@ -40,7 +49,42 @@ const routes: Routes = [
             {
                 path: '',
                 component: DashboardComponent
-            }
+            },
+            {
+            path: 'product-list',
+            component: ProductListComponent 
+        },{
+            path:'managecctv',
+            component: ManagecctvComponent
+        },
+        {
+            path:'list-reheasals',
+            component: ListReheasalsComponent
+        },
+        {
+            path:'manage-warehouse',
+            component:ManageWarehouseComponent
+        },
+        {
+            path:'deal-problems',
+            component: DealProblemsComponent
+        },
+        {
+            path:'assign-technician',
+            component: AssignTechnicianComponent
+        },
+        {
+            path:'user-manage',
+            component: UserManageComponent
+        },
+        {
+            path:'technician-manage',
+            component: TechnicianManageComponent
+        },
+        {
+            path:'report',
+            component: ReportComponent
+        }
         ]
     },
     {

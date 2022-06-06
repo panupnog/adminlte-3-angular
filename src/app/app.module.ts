@@ -38,6 +38,16 @@ import {authReducer} from './store/auth/reducer';
 import {uiReducer} from './store/ui/reducer';
 import { SelectComponent } from './components/select/select.component';
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
+import { ProductListComponent } from './pages/product-list/product-list.component';
+import { ManagecctvComponent } from './pages/managecctv/managecctv.component';
+import { ListReheasalsComponent } from './pages/list-reheasals/list-reheasals.component';
+import { ListManageuserComponent } from './pages/list-manageuser/list-manageuser.component';
+import { ManageWarehouseComponent } from './pages/manage-warehouse/manage-warehouse.component';
+import { DealProblemsComponent } from './pages/deal-problems/deal-problems.component';
+import { AssignTechnicianComponent } from './pages/assign-technician/assign-technician.component';
+import { UserManageComponent } from './pages/user-manage/user-manage.component';
+import { TechnicianManageComponent } from './pages/technician-manage/technician-manage.component';
+import { ReportComponent } from './pages/report/report.component';
 
 registerLocaleData(localeEn, 'en-EN');
 
@@ -68,7 +78,17 @@ registerLocaleData(localeEn, 'en-EN');
         DropdownMenuComponent,
         ControlSidebarComponent,
         SelectComponent,
-        CheckboxComponent
+        CheckboxComponent,
+        ProductListComponent,
+        ManagecctvComponent,
+        ListReheasalsComponent,
+        ListManageuserComponent,
+        ManageWarehouseComponent,
+        DealProblemsComponent,
+        AssignTechnicianComponent,
+        UserManageComponent,
+        TechnicianManageComponent,
+        ReportComponent
     ],
     imports: [
         BrowserModule,
